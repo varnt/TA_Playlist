@@ -2,11 +2,17 @@
 
 using namespace std;
 
+int menu()
+{
+    cout << "O que gostaria de fazer?" << endl;
+    cout << "1- add musica em uma playlist" << endl;
+    cout << "2- " << endl;
+    cout << "3- " << endl;
+    cout << "4- " << endl;
+}
+
 int main()
 {
     cout << "Hello world!" << endl;
     return 0;
 }
-
-
-////teste
