@@ -1,5 +1,7 @@
 #include <iostream>
 
+#define Nm 100
+
 class Musica
 {
     public:
@@ -32,6 +34,7 @@ class Playlist
 
     private:
         char NomePlaylist;
+        Musica vet[Nm];
 };
 
 using namespace std;
@@ -42,12 +45,13 @@ int menu()
     cout << "O que gostaria de fazer?" << endl;
     cout << "1- add musica em uma playlist" << endl;
     cout << "2- remover musica da playlist" << endl;
-    cout << "3- add playlist" << endl;
-    cout << "4- imprimir playlist na tela" << endl;
-    cout << "5- tempo total e medio da playlist" << endl;
-    cout << "6- genero especifico" << endl;
-    cout << "7- ordenar por ordem alfabetica" << endl;
-    cout << "8- sair" << endl << endl;
+    cout << "3- criar playlist" << endl;
+    cout << "4- add playlist" << endl;
+    cout << "5- imprimir playlist na tela" << endl;
+    cout << "6- tempo total e medio da playlist" << endl;
+    cout << "7- genero especifico" << endl;
+    cout << "8- ordenar por ordem alfabetica" << endl;
+    cout << "9- sair" << endl << endl;
 
     cout << "Escolha: ";
     cin >> op;
@@ -59,40 +63,47 @@ int main()
     int opcao = 0;
     opcao = menu();
 
-    cout << "menu:" << opcao << endl;
+    //cout << "menu:" << opcao << endl;
 
     switch (opcao)
-        case 1
+    {
+        case 1:
 
             break;
 
-        case 2
+        case 2:
 
             break;
 
-        case 3
+        case 3:
 
             break;
 
-        case 4
+        case 4:
 
             break;
 
-        case 5
+        case 5:
 
             break;
 
-        case 6
+        case 6:
 
             break;
 
-        case 7
+        case 7:
 
             break;
 
-        case 8
+        case 8:
 
             break;
+
+
+        case 9:
+
+            break;
+    }
 
     return 0;
 }
