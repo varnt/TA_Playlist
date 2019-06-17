@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1560736321 source:d:\users\victor\documents\github\ta_playlist\src\musica.cpp
+	"Musica.h"
+
+1560736321 d:\users\victor\documents\github\ta_playlist\include\musica.h
+
+1560810944 source:d:\users\victor\documents\github\ta_playlist\src\playlist.cpp
+	"Playlist.h"
+
+1560811253 d:\users\victor\documents\github\ta_playlist\include\playlist.h
+
