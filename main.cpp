@@ -1,6 +1,7 @@
 #include <iostream>
 
 #define Nm 100
+#define Np 5
 
 class Musica
 {
@@ -39,19 +40,75 @@ class Playlist
 
 using namespace std;
 
+void addMusica()
+{
+
+}
+
+void remMusica()
+{
+
+}
+
+void remMusica(int)
+{
+
+}
+
+void criaPlaylist()
+{
+
+
+}
+
+void addPlaylist()
+{
+
+}
+
+void impPlaylist()
+{
+
+}
+
+void tempPlaylist()
+{
+
+}
+
+void generoList()
+{
+
+}
+
+void ordAlf()
+{
+
+}
+
 int menu()
 {
     int op = 0;
-    cout << "O que gostaria de fazer?" << endl;
-    cout << "1- add musica em uma playlist" << endl;
-    cout << "2- remover musica da playlist" << endl;
-    cout << "3- criar playlist" << endl;
-    cout << "4- add playlist" << endl;
-    cout << "5- imprimir playlist na tela" << endl;
-    cout << "6- tempo total e medio da playlist" << endl;
-    cout << "7- genero especifico" << endl;
-    cout << "8- ordenar por ordem alfabetica" << endl;
-    cout << "9- sair" << endl << endl;
+    cout << "O que gostaria de fazer?" << endl << endl;
+    cout << "1- Add musica em uma playlist" << endl;
+    cout << "2- Remover musica da playlist" << endl;
+    cout << "3- Criar playlist" << endl;
+    cout << "4- Add playlist" << endl;
+    cout << "5- Imprimir playlist na tela" << endl;
+    cout << "6- Tempo total e medio da playlist" << endl;
+    cout << "7- Genero especifico" << endl;
+    cout << "8- Ordenar por ordem alfabetica" << endl;
+    cout << "9- Sair" << endl << endl;
+
+    cout << "Escolha: ";
+    cin >> op;
+    return(op);
+}
+int menu2()
+{
+    cout << "Qual forma deseja remover musica da playlist?" << endl << endl;
+    cout << "1- Remover musica da playlist" << endl;
+    cout << "2- Remover musica pelo numero dela na playlist" << endl;
 
     cout << "Escolha: ";
     cin >> op;
@@ -60,6 +117,10 @@ int menu()
 
 int main()
 {
+    Playlist p[Np];
+    while()
+    {
+
     int opcao = 0;
     opcao = menu();
 
@@ -68,42 +129,50 @@ int main()
     switch (opcao)
     {
         case 1:
-
+                addMusica();
             break;
 
         case 2:
-
+                char i = 0;
+                i = menu2();
+                if (i == 1) remMusica()
+                else if (i == 2)
+                {
+                    int p = 0;
+                    count << "Qual musica que deseja remover?  ";
+                    cin >> p
+                    remMusica(p);
+                }
+                else cout << "EROOOUUUU!!!!!"
             break;
 
         case 3:
-
+                criaPlaylist();
             break;
 
         case 4:
-
+                addPlaylist();
             break;
 
         case 5:
-
+                impPlaylist();
             break;
 
         case 6:
-
+                tempPlaylist();
             break;
 
         case 7:
-
+                generoList();
             break;
 
         case 8:
-
+                ordAlf();
             break;
-
 
         case 9:
-
             break;
     }
-
+    }
     return 0;
 }
